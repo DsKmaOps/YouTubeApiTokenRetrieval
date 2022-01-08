@@ -59,4 +59,5 @@ def channels_list_by_username(service, **kwargs):
 if __name__ == '__main__':
   os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
   service = get_authenticated_service()
+  # test it
   channels_list_by_username(service, part='snippet,contentDetails,statistics', forUsername='GoogleDevelopers')
